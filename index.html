@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro de Estudantes</h1>
+
+    <form>
+        <div class="container">
+
+            <fieldset>
+                <legend>Dados do Estudante</legend>
+
+                 <div>
+                <label>Primeiro nome:</label>
+                <input type="text">
+                </div>
+
+                <div>
+                    <label>Último nome:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email">
+                </div>
+
+
+                <div>
+                    <label>Telefone:</label>
+                    <input type="tel">
+                </div>
+
+                <div>
+                    <label>Whatsapp:</label>
+                    <input type="checkbox" class="checkbox">
+                </div>
+
+                <div>
+                    <label>Idade:</label>
+                    <input type="number" min="10" max="120">
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Dados do Responável</legend>
+
+                <div>
+                    <label>Primeiro Nome:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Último Nome:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email">
+                </div>
+
+                <div>
+                    <label>Telefone:</label>
+                    <input type="tel">
+                </div>
+
+                <div>
+                    <label>Whatsapp:</label>
+                    <input type="checkbox">
+                </div>
+
+                <div>
+                    <label>Parentesco:</label>
+                    <select>
+                        <option value="">--Selecione--</option>
+                        <option value="Pai">Pai</option>
+                        <option value="Mãe">Mãe</option>
+                        <option value="Tio">Tio</option>
+                        <option value="Tia">Tia</option>
+                        <option value="Avó">Avó</option>
+                        <option value="Avô">Avô</option>
+                    </select>
+                </div>
+
+
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Dados do Endereço</legend>
+
+                <div>
+                    <label>CEP:</label>
+                    <input type="text" placeholder="Digite e Aperte Enter para Buscar">
+                </div>
+
+                <div>
+                    <label>Logradouro:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Número:</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label>Bairro:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Cidade:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Estado:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>UF:</label>
+                    <input type="text">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do Curso</legend>
+
+                <div>
+                    <label>Nome:</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Período:</label>
+                    <select>
+                        <option value="1">--Selecione--</option>
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                        <option value="Integral">Integral</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Tipo:</label>
+                    <select>
+                        <option value="">--Selecione--</option>
+                        <option value="Técnico">Técnico</option>
+                        <option value="Aprendizagem">Aprendizagem</option>
+                        <option value="FIC">FIC</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Modalidade:</label>
+                    <select>
+                        <option value="">--Selecione--</option>
+                        <option value="Presencial">Presencial</option>
+                        <option value="Semipresencial">Semipresencial</option>
+                        <option value="Online">Online</option>
+                    </select>
+                </div>
+
+                <label>Observações:</label>
+                <textarea rows="4" cols="40"></textarea>
+            </fieldset>
+        </div>
+
+        <div class="botoes">
+            <button type="submit">Cadastrar informações</button>
+            <button type="reset">Limpar formulário</button>
+        </div>
+        
+        <div class ="container botoes">
+            <button type="submit" onclick="buscar(event)">Buscar CEP</button>
+            <button type="reset" onclick="limpar(event)">Limpar formulário</button>
+        </div>
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
